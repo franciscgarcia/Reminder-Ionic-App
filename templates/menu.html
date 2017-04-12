@@ -1,0 +1,35 @@
+<ion-side-menus enable-menu-with-back-views="false" style="">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button></ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="side-menu21"></ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu side="left" id="side-menu21">
+    <ion-content padding="false" style="top:0px !important;" class="side-menu-left side-menu-gradient">
+      <div class="spacer" style="width: 268px; height: 11px;"></div>
+      <h4 id="menu-heading2" style="color: rgb(255, 145, 0); font-weight: 600; text-align: center;">"E-RemindMoko"</h4>
+      <div class="profile-image">
+        <img src="img/49uCHIVcQhS1XY5ubIhO_reminder_logo.jpg" style="display: block; width: 40%; height: auto; margin-left: auto; margin-right: auto;">
+      </div>
+      <div class="spacer" style="width: 268px; height: 14px;"></div>
+      <ion-list id="menu-list1">
+        <ion-item class="item-icon-left calm  side-menu-item" id="menu-list-item1" ui-sref="menu.myProfile" menu-close="" style="">
+          <i class="icon ion-ios-person-outline"></i>Profile</ion-item>
+        <ion-item class="item-icon-left calm  side-menu-item" id="menu-list-item2" ui-sref="menu.myClasses" menu-close="" style="">
+          <i class="icon ion-ios-book-outline"></i>My Classes</ion-item>
+        <ion-item class="item-icon-left calm  side-menu-item" id="menu-list-item4" ui-sref="menu.myExams" menu-close="" style="">
+          <i class="icon ion-ios-bell-outline"></i>My Exams</ion-item>
+        <ion-item class="item-icon-left calm  side-menu-item" id="menu-list-item5" ui-sref="menu.openClassesList" menu-close="" style="">
+          <i class="icon ion-ios-list-outline"></i>Open Classes</ion-item>
+        <ion-item class="item-icon-left calm  side-menu-item" id="menu-list-item20" ui-sref="menu.announcements" menu-close="" style="">
+          <i class="icon ion-calendar"></i>Announcements</ion-item>
+        <ion-item class="item-icon-left assertive  side-menu-item" id="menu-list-item3" ui-sref="login" menu-close="" style="">
+          <i class="icon ion-log-out"></i>Logout</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

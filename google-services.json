@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "842329737063",
+    "firebase_url": "https://e-remindmoko.firebaseio.com",
+    "project_id": "e-remindmoko",
+    "storage_bucket": "e-remindmoko.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842329737063:android:16ad39ea545bef8c",
+        "android_client_info": {
+          "package_name": "io.cordova.myappfd57c9"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842329737063-s3v67mspakk4cojjvc56v5m7e3iopvts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7P49zh_jGDzp191pctvSaRtSIMN_I4CA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

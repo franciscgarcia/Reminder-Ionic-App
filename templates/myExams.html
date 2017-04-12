@@ -1,0 +1,25 @@
+<ion-view title="My Exams" id="page2" style="" cache-view="false">
+  <ion-content padding="true" class="has-header">
+      <ion-refresher pulling-text="Pull to refresh..."
+                     on-refresh="doRefresh()">
+      </ion-refresher>
+    <div class="list card" id="myExams-card29" ng-repeat="exam in exams">
+      <div class="item item-body" id="myExams-list-item-container21" style="">
+        <ion-list id="myExams-list16">
+          <ion-item class="item-icon-right assertive" id="myExams-list-item66" style="">{{exam.subject}}
+            <i class="icon ion-alert"></i>
+          </ion-item>
+        </ion-list>
+        <div id="myExams-markdown27" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">Date: {{exam.exam_date | date: "MMM/dd/yyyy"}}</p>
+        </div>
+        <div id="myExams-markdown10" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">Time: {{exam.time_range}}</p>
+        </div>
+        <div id="myExams-markdown19" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">Room: {{exam.room}}</p>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

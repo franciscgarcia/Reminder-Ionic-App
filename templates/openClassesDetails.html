@@ -1,0 +1,24 @@
+<ion-view title="Open Classes Details" id="page11" style="">
+  <ion-content padding="true" class="has-header">
+    <form id="openClassesDetails-form5" class="list">
+        <div class="item item-body" id="myClasses-list-item-container11" style="">
+            <div id="myClasses-markdown21" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;">Subject Code: {{subjectDetails.code}}</p>
+            </div>
+            <div id="myClasses-markdown25" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;">Subject Description: {{subjectDetails.description}}</p>
+            </div>
+            <div id="myClasses-markdown22" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;">Day: {{subjectDetails.days}}</p>
+            </div>
+            <div id="myClasses-markdown23" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;">Time: {{subjectDetails.time_start | date:'h:mm a'}} - {{subjectDetails.time_end | date:'h:mm a'}}</p>
+            </div>
+            <div id="myClasses-markdown24" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;">Section: {{subjectDetails.section}}</p>
+            </div>
+        </div>  
+        <button id="openClassesDetails-button5" class="button button-positive  button-block" ng-click="register()">Register</button>    
+    </form>
+  </ion-content>
+</ion-view>

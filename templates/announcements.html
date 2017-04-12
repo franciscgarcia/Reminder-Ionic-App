@@ -1,0 +1,19 @@
+<ion-view title="Announcements" id="page8" style="" cache-view="false">
+  <ion-content padding="true" class="has-header">
+      <ion-refresher pulling-text="Pull to refresh..."
+                     on-refresh="doRefresh()">
+      </ion-refresher>
+    <div class="list card" id="announcements-card26" ng-repeat="announcement in announcements">
+      <div class="item item-body" id="announcements-list-item-container13" style="">
+        <div id="announcements-markdown13" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">{{announcement.log_date | date : 'MMM-dd-yyyy'}}</p>
+        </div>
+        <div id="announcements-markdown14" class="show-list-numbers-and-dots"></div>
+        <div id="announcements-markdown15" class="show-list-numbers-and-dots">
+          <p style="color:#000000;">{{announcement.content}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

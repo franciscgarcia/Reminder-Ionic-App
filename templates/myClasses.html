@@ -1,0 +1,21 @@
+<ion-view title="My Classes" id="page7" style="" cache-view="false">
+  <ion-content padding="true" class="has-header">      
+    <div class="item item-body" id="myClasses-list-item-container11" style="" ng-repeat="class in classes">
+      <div id="myClasses-markdown21" class="show-list-numbers-and-dots">
+        <p style="margin-top:0px;color:#000000;">Subject Code: {{class.code}}</p>
+      </div>
+      <div id="myClasses-markdown25" class="show-list-numbers-and-dots">
+        <p style="margin-top:0px;color:#000000;">Subject Description: {{class.description}}</p>
+      </div>
+      <div id="myClasses-markdown22" class="show-list-numbers-and-dots">
+        <p style="margin-top:0px;color:#000000;">Day: {{class.days}}</p>
+      </div>
+      <div id="myClasses-markdown23" class="show-list-numbers-and-dots">
+        <p style="margin-top:0px;color:#000000;">Time: {{class.time_start | date:"HH:mm"}} - {{class.time_end | date:'HH:mm'}}</p>
+      </div>
+      <div id="myClasses-markdown24" class="show-list-numbers-and-dots">
+        <p style="margin-top:0px;color:#000000;">Section: {{class.section}}</p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

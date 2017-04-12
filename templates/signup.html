@@ -1,0 +1,60 @@
+<ion-view title="Signup" hide-nav-bar="true" id="page5" style="" hide-back-button="false" cache-view="false">
+  <ion-content padding="true" style="background: url(img/oTy9E712SgaW5djwYUpf_gradient.jpg) no-repeat center;background-size:cover;" class="manual-ios-statusbar-padding" scroll="false">
+    <form id="signup-form2" class="list">
+      <ion-list id="signup-list3">
+        <label class="item item-input" id="signup-input3">
+          <span class="input-label">First Name</span>
+          <input placeholder="First Name" type="text" ng-model="data.first_name" 
+                 ng-pattern="/^[a-zA-Z]*$/" ng-trim="false" maxlength="20">
+        </label>
+        <label class="item item-input" id="signup-input8">
+          <span class="input-label">Middle Name</span>
+          <input placeholder="Middle Name" type="text" ng-model="data.middle_name"
+                 ng-pattern="/^[a-zA-Z]*$/" ng-trim="false" maxlength="20">
+        </label>
+        <label class="item item-input" id="signup-input9">
+          <span class="input-label">Last Name</span>
+          <input placeholder="Last Name" type="text" ng-model="data.last_name"
+                 ng-pattern="/^[a-zA-Z]*$/" ng-trim="false" maxlength="20">
+        </label>
+        <label class="item item-input" id="signup-input4">
+          <span class="input-label">USN</span>
+          <input placeholder="USN" type="number" ng-model="data.student_no">
+        </label>
+        <label class="item item-input" id="signup-input5">
+          <span class="input-label">Password</span>
+          <input placeholder="Password" type="password" ng-model="data.password">
+        </label>
+
+        <label class="item item-input" id="signup-email">
+            <span class="input-label">Email</span>
+            <input placeholder="Email" type="email" ng-model="data.email">
+        </label>
+
+        <label class="item item-select" id="signup-course">
+            <span class="input-label">Course</span>
+            <select ng-model="data.course" required>
+                <option>B.S. Information Technology</option>
+                <option>B.S. Information Systems</option>
+                <option>B.S. Computer Science</option>
+                <option>B.S. Computer Engineering</option>
+            </select>
+        </label> 
+
+        <label class="item item-select" id="signup-year">
+            <span class="input-label">Level/Year</span>
+            <select ng-model="data.year_level" required>
+                <option>1st Year</option>
+                <option>2nd Year</option>
+                <option>3rd Year</option>
+                <option>4th Year</option>
+            </select>
+        </label> 
+
+      </ion-list>
+      <button id="signup-button3" class="button button-stable  button-block" 
+              ng-disabled="!data.first_name || !data.middle_name || !data.last_name || !data.student_no ||
+              !data.password || !data.course || !data.year_level || !data.email" ng-click="register()">Sign up</button>
+    </form>
+  </ion-content>
+</ion-view>
